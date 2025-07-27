@@ -2,39 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Gaming/Tech Design System - Dark theme with electric blues */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Dark gaming theme */
+    --background: 222 47% 6%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 222 47% 8%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 222 47% 8%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Electric blue primary */
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 6%;
+    --primary-glow: 217 91% 70%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Electric cyan secondary */
+    --secondary: 187 95% 43%;
+    --secondary-foreground: 222 47% 6%;
+    --secondary-glow: 187 95% 53%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 222 47% 12%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 187 95% 43%;
+    --accent-foreground: 222 47% 6%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 222 47% 16%;
+    --input: 222 47% 12%;
+    --ring: 217 91% 60%;
+
+    /* Gaming gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(187 95% 43%));
+    --gradient-hero: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(187 95% 43%) 50%, hsl(217 91% 70%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(222 47% 8% / 0.8), hsl(222 47% 12% / 0.4));
+    
+    /* Glass effects */
+    --glass-bg: hsl(222 47% 8% / 0.2);
+    --glass-border: hsl(217 91% 60% / 0.2);
+    
+    /* Shadows and glows */
+    --shadow-glow: 0 0 30px hsl(217 91% 60% / 0.3);
+    --shadow-card: 0 10px 30px hsl(222 47% 4% / 0.5);
+    --shadow-elevated: 0 20px 40px hsl(222 47% 4% / 0.7);
 
     --radius: 0.5rem;
 
@@ -101,5 +118,93 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* Custom gaming utilities */
+  .glass-effect {
+    @apply backdrop-blur-lg border;
+    background: var(--glass-bg);
+    border-color: var(--glass-border);
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  .gradient-hero-text {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-hero);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+
+  /* Smooth scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Gaming card styles */
+  .gaming-card {
+    @apply glass-effect shadow-card rounded-xl p-6 transition-all duration-300 hover:shadow-elevated hover:scale-105;
+    background: var(--gradient-card);
+  }
+
+  /* Gaming button styles */
+  .btn-primary {
+    @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-glow hover:scale-105;
+    background: var(--gradient-primary);
+    color: hsl(var(--primary-foreground));
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 rounded-lg font-semibold glass-effect transition-all duration-300 hover:shadow-glow hover:scale-105;
+    color: hsl(var(--foreground));
+  }
+
+  /* Animation utilities */
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+  from { box-shadow: var(--shadow-glow); }
+  to { box-shadow: 0 0 40px hsl(217 91% 60% / 0.5); }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
