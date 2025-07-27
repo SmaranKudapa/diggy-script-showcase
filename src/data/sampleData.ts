@@ -14,6 +14,15 @@ export interface Testimonial {
   image_url: string;
 }
 
+export interface SocialMedia {
+  id: string;
+  icon: string;
+  title: string;
+  description: string;
+  url: string;
+  isPrimary: boolean;
+}
+
 export const sampleProjects: Project[] = [
   {
     id: '1',
@@ -59,5 +68,32 @@ export const sampleTestimonials: Testimonial[] = [
     id: '3',
     client_name: 'InnovativeGaming',
     image_url: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=300&fit=crop'
+  }
+];
+
+export const sampleSocialMedia: SocialMedia[] = [
+  {
+    id: "1",
+    icon: "MessageCircle",
+    title: "Discord",
+    description: "Main contact method - Let's discuss your project!",
+    url: "https://discord.com/users/731669935461498890",
+    isPrimary: true
+  },
+  {
+    id: "2",
+    icon: "Youtube",
+    title: "YouTube", 
+    description: "Development content and tutorials",
+    url: "https://youtube.com/@diggy",
+    isPrimary: true
+  },
+  {
+    id: "3",
+    icon: "Music",
+    title: "TikTok",
+    description: "Short clips and development showcases", 
+    url: "https://tiktok.com/@diggy",
+    isPrimary: true
   }
 ];

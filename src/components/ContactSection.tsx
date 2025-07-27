@@ -1,29 +1,17 @@
-import { MessageCircle, Youtube, Music } from 'lucide-react';
+import * as LucideIcons from 'lucide-react';
+import { sampleSocialMedia } from '../data/sampleData';
 
 const ContactSection = () => {
-  const contactMethods = [
-    {
-      icon: MessageCircle,
-      title: "Discord",
-      description: "Main contact method - Let's discuss your project!",
-      action: () => window.open('https://discord.com/users/731669935461498890', '_blank'),
-      isPrimary: true
-    },
-    {
-      icon: Youtube,
-      title: "YouTube",
-      description: "Development content and tutorials",
-      action: () => window.open('https://youtube.com/@diggy', '_blank'),
-      isPrimary: false
-    },
-    {
-      icon: Music,
-      title: "TikTok",
-      description: "Short clips and development showcases",
-      action: () => window.open('https://tiktok.com/@diggy', '_blank'),
-      isPrimary: false
-    }
-  ];
+  const contactMethods = sampleSocialMedia.map(social => {
+    const IconComponent = LucideIcons[social.icon as keyof typeof LucideIcons] as any;
+    return {
+      icon: IconComponent,
+      title: social.title,
+      description: social.description,
+      action: () => window.open(social.url, '_blank'),
+      isPrimary: social.isPrimary
+    };
+  });
 
   const services = [
     "Custom Scripts & Systems",
@@ -72,12 +60,10 @@ const ContactSection = () => {
                 </p>
               </div>
               
-              {method.isPrimary && (
-                <div className="inline-flex items-center text-primary font-semibold">
-                  <span>Contact Now</span>
-                  <MessageCircle size={16} className="ml-2" />
-                </div>
-              )}
+              <div className="inline-flex items-center text-primary font-semibold">
+                <span>{method.title === 'Discord' ? 'Contact Now' : `Visit ${method.title}`}</span>
+                <method.icon size={16} className="ml-2" />
+              </div>
             </div>
           ))}
         </div>

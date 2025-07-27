@@ -45,9 +45,6 @@ const Navigation = () => {
                 <button onClick={() => scrollToSection('hero')} className="text-foreground hover:text-primary transition-colors">
                   Home
                 </button>
-                <button onClick={() => scrollToSection('about')} className="text-foreground hover:text-primary transition-colors">
-                  About
-                </button>
                 <button onClick={() => scrollToSection('projects')} className="text-foreground hover:text-primary transition-colors">
                   Projects
                 </button>
@@ -66,11 +63,6 @@ const Navigation = () => {
                 Portfolio
               </Link>
             )}
-            
-            <Link to="/admin" className="btn-secondary flex items-center gap-2">
-              <Settings size={16} />
-              Admin
-            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -92,9 +84,6 @@ const Navigation = () => {
                 <button onClick={() => scrollToSection('hero')} className="block px-3 py-2 text-foreground hover:text-primary transition-colors w-full text-left">
                   Home
                 </button>
-                <button onClick={() => scrollToSection('about')} className="block px-3 py-2 text-foreground hover:text-primary transition-colors w-full text-left">
-                  About
-                </button>
                 <button onClick={() => scrollToSection('projects')} className="block px-3 py-2 text-foreground hover:text-primary transition-colors w-full text-left">
                   Projects
                 </button>
@@ -113,10 +102,6 @@ const Navigation = () => {
                 Portfolio
               </Link>
             )}
-            
-            <Link to="/admin" className="block px-3 py-2 text-foreground hover:text-primary transition-colors">
-              Admin Dashboard
-            </Link>
           </div>
         </div>
       )}
