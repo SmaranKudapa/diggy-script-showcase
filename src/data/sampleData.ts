@@ -85,7 +85,7 @@ export const sampleSocialMedia: SocialMedia[] = [
     icon: "Youtube",
     title: "YouTube", 
     description: "Development content and tutorials",
-    url: "https://youtube.com/@diggy",
+    url: "https://www.youtube.com/@OneMillionRoblox/shorts",
     isPrimary: true
   },
   {
@@ -93,7 +93,7 @@ export const sampleSocialMedia: SocialMedia[] = [
     icon: "Music",
     title: "TikTok",
     description: "Short clips and development showcases", 
-    url: "https://tiktok.com/@diggy",
+    url: "https://www.tiktok.com/@onemillionroblox",
     isPrimary: true
   }
 ];
