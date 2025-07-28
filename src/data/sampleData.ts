@@ -110,17 +110,17 @@ export const sampleProjects: Project[] = [
 export const sampleTestimonials: Testimonial[] = [
   {
     id: '1',
-    client_name: 'GameDev Studios',
+    client_name: 'D3V_Alex',
     image_url: 'https://ibb.co/fdjsPQZm'
   },
   {
     id: '2',
-    client_name: 'RobloxMaster99',
+    client_name: 'nibbys',
     image_url: 'https://ibb.co/j9TtHRqy'
   },
   {
     id: '3',
-    client_name: 'InnovativeGaming',
+    client_name: 'Mallsoup',
     image_url: 'https://ibb.co/gFvtd331'
   }
 ];
