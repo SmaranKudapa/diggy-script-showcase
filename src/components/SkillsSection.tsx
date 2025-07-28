@@ -37,8 +37,7 @@ const SkillsSection = () => {
         "Notion & Task Management",
         "Project Documentation",
         "Client Relations",
-        "Problem Solving",
-        "\"Most other scripting things, just DM me to ask!\""
+        "Problem Solving"
       ]
     }
   ];
