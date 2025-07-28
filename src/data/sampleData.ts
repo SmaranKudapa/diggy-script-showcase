@@ -26,31 +26,94 @@ export interface SocialMedia {
 export const sampleProjects: Project[] = [
   {
     id: '1',
-    title: 'Advanced Inventory System',
-    youtube_video_id: 'dQw4w9WgXcQ', // Placeholder YouTube video ID
-    game_link: 'https://www.roblox.com/games/1',
-    technologies: ['Knit Framework', 'DataStoreService', 'OOP', 'UI Design'],
+    title: 'Build System',
+    youtube_video_id: 'https://www.youtube.com/watch?v=e_KITqc6gUA',
+    game_link: 'https://www.roblox.com/games/117115671511965/Build-System-Demo',
+    technologies: ['Knit Framework', 'Modular', 'DataStoreService', 'OOP', 'UI Scripting'],
     project_type: 'system',
     sort_order: 1
   },
   {
-    id: '2', 
-    title: 'Racing Game Physics',
-    youtube_video_id: 'dQw4w9WgXcQ',
-    game_link: 'https://www.roblox.com/games/2',
-    technologies: ['Physics Systems', 'TweenService', 'UserInputService', 'Mobile Support'],
-    project_type: 'development',
+    id: '2',
+    title: 'Color Tiles Game System',
+    youtube_video_id: '',
+    game_link: 'https://www.roblox.com/games/138983222744840/Color-Tiles',
+    technologies: ['Knit Framework', 'Modular', 'DataStoreService', 'OOP', 'UI Scripting'],
+    project_type: 'system',
     sort_order: 2
   },
   {
     id: '3',
-    title: 'Smart NPC Pathfinding',
-    youtube_video_id: 'dQw4w9WgXcQ', 
-    game_link: 'https://www.roblox.com/games/3',
-    technologies: ['Pathfinding Service', 'AI Logic', 'CollectionService', 'Performance Optimization'],
+    title: 'Racing Go-Kart System',
+    youtube_video_id: '',
+    game_link: 'https://www.roblox.com/games/88580580594728/Racing-Game',
+    technologies: ['Physics', 'Vehicle System','Knit Framework', 'Modular', 'DataStoreService', 'OOP', 'UI Scripting'],
     project_type: 'system',
     sort_order: 3
-  }
+  },
+  {
+    id: '4',
+    title: 'Quick Draw Duel System',
+    youtube_video_id: '',
+    game_link: 'http://roblox.com/games/84745420872512/Quick-Draw-Duel-System',
+    technologies: ['Knit Framework', 'Modular', 'Combat','DataStoreService', 'OOP', 'UI Scripting'],
+    project_type: 'system',
+    sort_order: 4
+  },
+  {
+    id: '5',
+    title: 'Lava Escape Obby System',
+    youtube_video_id: '',
+    game_link: 'https://www.roblox.com/games/118217954881754/Lava-Escape-Obby',
+    technologies: ['Knit Framework', 'Modular', 'UI Scripting'],
+    project_type: 'system',
+    sort_order: 5
+  },
+  {
+    id: '6', 
+    title: 'Dialogue System',
+    youtube_video_id: 'https://www.youtube.com/watch?v=nNM5GfOjl4s',
+    game_link: 'https://www.roblox.com/games/114450135905695/Dialogue-System-Demo',
+    technologies: ['Modular', 'UI Scripting', 'Mobile Support'],
+    project_type: 'system',
+    sort_order: 6
+  },
+  {
+    id: '7',
+    title: 'Shopping Cart/Supermarket System',
+    youtube_video_id: 'https://www.youtube.com/watch?v=OOmPhNO5ELE', 
+    game_link: 'https://www.roblox.com/games/103844083914407/Super-Market-Test',
+    technologies: ['Knit Framework', 'Modular', 'UI Scripting', 'CollectionService', 'Performance Optimization'],
+    project_type: 'system',
+    sort_order: 7
+  },
+  {
+    id: '8',
+    title: 'Custom Bubble Chat Gamepass Color',
+    youtube_video_id: 'https://www.youtube.com/watch?v=UU9QHBCBRE0', 
+    game_link: 'https://www.roblox.com/games/113019496497140/Custom-Bubble-Chat-Color-Gamepass-Demo',
+    technologies: ['Bubble/Text Chat', 'UI Scripting'],
+    project_type: 'system',
+    sort_order: 8
+  },
+  {
+    id: '9',
+    title: 'Soccer Penality Kick',
+    youtube_video_id: 'https://www.youtube.com/watch?v=6kBGEGuQcJo', 
+    game_link: 'https://www.roblox.com/games/71963064538231/Modular-Penalty-Kick-with-Goalie-Demo',
+    technologies: ['Knit Framework', 'Modular', 'OOP'],
+    project_type: 'system',
+    sort_order: 9
+  },
+  {
+    id: '10',
+    title: 'Soccer Penality Kick',
+    youtube_video_id: 'https://www.youtube.com/watch?v=6kBGEGuQcJo', 
+    game_link: 'https://www.roblox.com/games/71963064538231/Modular-Penalty-Kick-with-Goalie-Demo',
+    technologies: ['Knit Framework', 'Modular', 'OOP'],
+    project_type: 'system',
+    sort_order: 10
+  },
 ];
 
 export const sampleTestimonials: Testimonial[] = [

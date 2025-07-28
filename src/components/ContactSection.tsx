@@ -87,7 +87,7 @@ const ContactSection = () => {
           </div>
           
           <p className="text-muted-foreground mt-6 italic">
-            "Most other scripting things too - just DM me to ask!"
+            Most other scripting things too - just DM me to ask!
           </p>
         </div>
       </div>
