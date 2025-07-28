@@ -27,7 +27,7 @@ export const sampleProjects: Project[] = [
   {
     id: '1',
     title: 'Build System',
-    youtube_video_id: 'https://www.youtube.com/watch?v=e_KITqc6gUA',
+    youtube_video_id: 'e_KITqc6gUA',
     game_link: 'https://www.roblox.com/games/117115671511965/Build-System-Demo',
     technologies: ['Knit Framework', 'Modular', 'DataStoreService', 'OOP', 'UI Scripting'],
     project_type: 'system',
@@ -72,7 +72,7 @@ export const sampleProjects: Project[] = [
   {
     id: '6', 
     title: 'Dialogue System',
-    youtube_video_id: 'https://www.youtube.com/watch?v=nNM5GfOjl4s',
+    youtube_video_id: 'nNM5GfOjl4s',
     game_link: 'https://www.roblox.com/games/114450135905695/Dialogue-System-Demo',
     technologies: ['Modular', 'UI Scripting', 'Mobile Support'],
     project_type: 'system',
@@ -81,7 +81,7 @@ export const sampleProjects: Project[] = [
   {
     id: '7',
     title: 'Shopping Cart/Supermarket System',
-    youtube_video_id: 'https://www.youtube.com/watch?v=OOmPhNO5ELE', 
+    youtube_video_id: 'OOmPhNO5ELE', 
     game_link: 'https://www.roblox.com/games/103844083914407/Super-Market-Test',
     technologies: ['Knit Framework', 'Modular', 'UI Scripting', 'CollectionService', 'Performance Optimization'],
     project_type: 'system',
@@ -90,7 +90,7 @@ export const sampleProjects: Project[] = [
   {
     id: '8',
     title: 'Custom Bubble Chat Gamepass Color',
-    youtube_video_id: 'https://www.youtube.com/watch?v=UU9QHBCBRE0', 
+    youtube_video_id: 'UU9QHBCBRE0', 
     game_link: 'https://www.roblox.com/games/113019496497140/Custom-Bubble-Chat-Color-Gamepass-Demo',
     technologies: ['Bubble/Text Chat', 'UI Scripting'],
     project_type: 'system',
@@ -99,38 +99,29 @@ export const sampleProjects: Project[] = [
   {
     id: '9',
     title: 'Soccer Penality Kick',
-    youtube_video_id: 'https://www.youtube.com/watch?v=6kBGEGuQcJo', 
+    youtube_video_id: '6kBGEGuQcJo', 
     game_link: 'https://www.roblox.com/games/71963064538231/Modular-Penalty-Kick-with-Goalie-Demo',
     technologies: ['Knit Framework', 'Modular', 'OOP'],
     project_type: 'system',
     sort_order: 9
-  },
-  {
-    id: '10',
-    title: 'Soccer Penality Kick',
-    youtube_video_id: 'https://www.youtube.com/watch?v=6kBGEGuQcJo', 
-    game_link: 'https://www.roblox.com/games/71963064538231/Modular-Penalty-Kick-with-Goalie-Demo',
-    technologies: ['Knit Framework', 'Modular', 'OOP'],
-    project_type: 'system',
-    sort_order: 10
-  },
+  }
 ];
 
 export const sampleTestimonials: Testimonial[] = [
   {
     id: '1',
     client_name: 'GameDev Studios',
-    image_url: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=300&fit=crop'
+    image_url: 'https://ibb.co/fdjsPQZm'
   },
   {
     id: '2',
     client_name: 'RobloxMaster99',
-    image_url: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop'
+    image_url: 'https://ibb.co/j9TtHRqy'
   },
   {
     id: '3',
     client_name: 'InnovativeGaming',
-    image_url: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=300&fit=crop'
+    image_url: 'https://ibb.co/gFvtd331'
   }
 ];
 
