@@ -107,7 +107,7 @@ export const sampleProjects: Project[] = [
   },
   {
     id: '10',
-    title: 'Animation 1',
+    title: 'Animation 1: "the car ride"',
     youtube_video_id: 'SL_5jaLFJe0', 
     game_link: 'Animation1',
     technologies: ['Moon Animator'],
@@ -116,8 +116,8 @@ export const sampleProjects: Project[] = [
   },
   {
     id: '11',
-    title: 'Animation 2',
-    youtube_video_id: 'shorts/xx0EQBdYahY', 
+    title: 'Animation 2: "missing wife"',
+    youtube_video_id: '9Czrb54Zh94', 
     game_link: 'Animation2',
     technologies: ['Moon Animator'],
     project_type: 'animation',
