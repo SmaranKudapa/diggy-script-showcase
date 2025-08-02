@@ -4,7 +4,7 @@ export interface Project {
   youtube_video_id: string;
   game_link: string;
   technologies: string[];
-  project_type: 'development' | 'design' | 'system' | 'ui' | 'other';
+  project_type: 'development' | 'design' | 'system' | 'ui' | 'animation' | 'other';
   sort_order: number;
 }
 
@@ -36,7 +36,7 @@ export const sampleProjects: Project[] = [
   {
     id: '2',
     title: 'Color Tiles Game System',
-    youtube_video_id: '',
+    youtube_video_id: 'mR-ho_Ev_kM',
     game_link: 'https://www.roblox.com/games/138983222744840/Color-Tiles',
     technologies: ['Knit Framework', 'Modular', 'DataStoreService', 'OOP', 'UI Scripting'],
     project_type: 'system',
@@ -45,7 +45,7 @@ export const sampleProjects: Project[] = [
   {
     id: '3',
     title: 'Racing Go-Kart System',
-    youtube_video_id: '',
+    youtube_video_id: 'r5IM-NDq0QA',
     game_link: 'https://www.roblox.com/games/88580580594728/Racing-Game',
     technologies: ['Physics', 'Vehicle System','Knit Framework', 'Modular', 'DataStoreService', 'OOP', 'UI Scripting'],
     project_type: 'system',
@@ -53,17 +53,17 @@ export const sampleProjects: Project[] = [
   },
   {
     id: '4',
-    title: 'Quick Draw Duel System',
-    youtube_video_id: '',
-    game_link: 'http://roblox.com/games/84745420872512/Quick-Draw-Duel-System',
-    technologies: ['Knit Framework', 'Modular', 'Combat','DataStoreService', 'OOP', 'UI Scripting'],
-    project_type: 'system',
+    title: 'Cashgrab Obby',
+    youtube_video_id: 'tmcFYcDRs9o', 
+    game_link: 'N/A',
+    technologies: ['Knit Framework', 'Modular', 'OOP', 'UI Scripting'],
+    project_type: 'development',
     sort_order: 4
   },
   {
     id: '5',
     title: 'Lava Escape Obby System',
-    youtube_video_id: '',
+    youtube_video_id: 'dDyzGJVfV-g',
     game_link: 'https://www.roblox.com/games/118217954881754/Lava-Escape-Obby',
     technologies: ['Knit Framework', 'Modular', 'UI Scripting'],
     project_type: 'system',
@@ -104,24 +104,24 @@ export const sampleProjects: Project[] = [
     technologies: ['Knit Framework', 'Modular', 'OOP'],
     project_type: 'system',
     sort_order: 9
-  }
+  },
 ];
 
 export const sampleTestimonials: Testimonial[] = [
   {
     id: '1',
     client_name: 'D3V_Alex',
-    image_url: 'https://ibb.co/fdjsPQZm'
+    image_url: 'https://ik.imagekit.io/1MStudios/image(3).png?updatedAt=1754146918711'
   },
   {
     id: '2',
     client_name: 'nibbys',
-    image_url: 'https://ibb.co/j9TtHRqy'
+    image_url: 'https://ik.imagekit.io/1MStudios/image.png?updatedAt=1754146858644'
   },
   {
     id: '3',
     client_name: 'Mallsoup',
-    image_url: 'https://ibb.co/gFvtd331'
+    image_url: 'https://ik.imagekit.io/1MStudios/image(1).png?updatedAt=1754146885521'
   }
 ];
 
