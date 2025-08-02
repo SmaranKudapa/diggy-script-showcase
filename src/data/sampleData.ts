@@ -105,6 +105,24 @@ export const sampleProjects: Project[] = [
     project_type: 'system',
     sort_order: 9
   },
+  {
+    id: '10',
+    title: 'Animation 1',
+    youtube_video_id: 'SL_5jaLFJe0', 
+    game_link: 'Animation1',
+    technologies: ['Moon Animator'],
+    project_type: 'animation',
+    sort_order: 10
+  },
+  {
+    id: '11',
+    title: 'Animation 2',
+    youtube_video_id: 'shorts/xx0EQBdYahY', 
+    game_link: 'Animation2',
+    technologies: ['Moon Animator'],
+    project_type: 'animation',
+    sort_order: 11
+  }
 ];
 
 export const sampleTestimonials: Testimonial[] = [
